@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
-    "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed"
+    "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed",
+    "docker:run": "yarn build && docker build -t hackathon-demo -f Dockerfile . && docker run -p 8080:80 hackathon-demo"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -10,3 +10,8 @@ Basic UI to get you up and running as soon as possible. For documentation, see a
 yarn install
 yarn start
 ```
+
+The development server will be available on `localhost:3000`.
+
+# Docker
+You can host the app on a Docker container by running `yarn docker:run`. It'll build the app through `yarn build` and run it on a simple Nginx instance.
